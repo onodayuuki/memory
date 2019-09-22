@@ -1,7 +1,21 @@
 <?php
-    $number = "こんにちは";
+    $number = "";
 
-    echo $number;
+    if(isset($_GET['number'])){
+        $number = $_GET['number'];
+
+        if($number == '0'){
+
+        }else if($number <> '0'){
+            $url = "json/data.json";
+            $json = file_get_contents($url);
+            $json = mb_convert_encoding($json, 'UTF8','ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+            $arr = json_decode($json,true);
+
+            $title = $arr["data"][$number][$number][0]["title"];
+            $document = $arr["data"][$number][$number][0]["document"];
+        }
+    }
 ?>
 
 <!DOCTYPE HTML>
