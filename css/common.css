@@ -392,6 +392,21 @@ li a:hover:not(.active) {
 	color: #ffffff;
 	background-color: #1b2538;
 }
+.slideArea{
+	padding:0px 0px 50px 0px;
+}
+.memoryArea{
+	display:flex;
+	border: solid 3px #6091d3;
+	border-radius: 10px
+}
+.memory{
+	padding:20px 10px 20px 13px;
+}
+.img{
+	width:130px;
+	height:100px;
+}
 footer{
 	height: 100px;
 	background-color: #66ccff;
