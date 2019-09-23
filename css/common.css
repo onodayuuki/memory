@@ -361,10 +361,6 @@ header a img{
 	width: 1000px;
 	padding:50px 35px;
 }
-h1{
-	border-bottom: double 5px #FFC778;
-	margin: 0px 0px 20px 5px;
-}
 ul {
 	width: 200px;
 	margin: 40px 0px 0px 0px;
@@ -392,8 +388,11 @@ li a:hover:not(.active) {
 	color: #ffffff;
 	background-color: #1b2538;
 }
+h1{
+	border-bottom: double 5px #FFC778;
+}
 .slideArea{
-	padding:0px 0px 50px 0px;
+	padding:30px 0px 50px 0px;
 }
 .memoryArea{
 	display:flex;
