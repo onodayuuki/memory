@@ -389,6 +389,7 @@ li a:hover:not(.active) {
 	background-color: #1b2538;
 }
 h1{
+	padding: 0px 0px 0px 23px;
 	border-bottom: double 5px #FFC778;
 }
 .slideArea{
