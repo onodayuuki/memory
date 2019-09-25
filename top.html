@@ -1,7 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<meta http-equiv="content-type" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/top.css">
+	<link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="slick/slick.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<meta http-equiv="content-type" charset="utf-8">
 	<title>思い出</title>
 </head>
 <body>
@@ -10,18 +16,38 @@
 </header>
 <div class="contentsArea">
     <div class="menuArea">
-        <ul>
-        	<li><a class="active" href="top.html">ホーム</a></li>
-        	<li><a href="memory2019.html">2019年編</a></li>
-        	<li><a href="memory2018.html">2018年編</a></li>
-        	<li><a href="memory2017.html">2017年編</a></li>
+        <ul class="ul">
+        	<li class="li"><a class="active" href="top.html">ホーム</a></li>
+        	<li class="li"><a href="memory2020.html">2020年編</a></li>
+        	<li class="li"><a href="memory2019.html">2019年編</a></li>
+        	<li class="li"><a href="memory2018.html">2018年編</a></li>
+        	<li class="li"><a href="memory2017.html">2017年編</a></li>
+        	<li class="li"><a href="nickname.html">あだ名集</a></li>
         </ul>
 	</div>
 	<div class="mainArea">
+		<ul class="slider">
+		    <li><img src="img/memory20192.JPG" alt="image01"></li>
+		    <li><img src="img/memory20192.JPG" alt="image01"></li>
+		    <li><img src="img/memory20192.JPG" alt="image01"></li>
+		    <li><img src="img/memory20192.JPG" alt="image01"></li>
+		    <li><img src="img/memory20192.JPG" alt="image01"></li>
+		    <li><img src="img/memory20192.JPG" alt="image01"></li>
+		</ul>
 	</div>
 </div>
 <footer>
 	<p>copyright2019 yuuki&chika</p>
 </footer>
+
+<script>
+window.onload = function() {
+	$('.slider').slick({
+	    /*  autoplay:true,*/
+	    autoplaySpeed:5000,
+	    dots:true,
+	});
+}
+</script>
 </body>
 </html>
