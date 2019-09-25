@@ -389,8 +389,22 @@ li a:hover:not(.active) {
 	background-color: #1b2538;
 }
 h1{
-	padding: 0px 0px 0px 23px;
+	padding:0px 0px 0px 25px;
 	border-bottom: double 5px #FFC778;
+}
+.slider{
+	margin: 0px;
+    width:505px;
+    height:306px;
+}
+.slider img{
+    height: 300px;
+    width: 500px;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
 }
 .slideArea{
 	padding:30px 0px 50px 0px;
@@ -416,5 +430,5 @@ footer p{
 	font-size: 25px;
 	text-align: center;
 	color: #ffffff;
-	padding: 28px;
+	padding: 32px 30px 28px 30px;
 }
