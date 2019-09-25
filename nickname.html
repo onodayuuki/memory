@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<meta http-equiv="content-type" charset="utf-8">
+<title>ニックネーム</title>
+</head>
+<body>
+<header>
+	<a><img src="img/logo.jpg" alt="logo"></a>
+</header>
+<div class="contentsArea">
+    <div class="menuArea">
+        <ul>
+        	<li><a class="active" href="top.html">ホーム</a></li>
+        	<li><a href="memory2020.html">2020年編</a></li>
+        	<li><a href="memory2019.html">2019年編</a></li>
+        	<li><a href="memory2018.html">2018年編</a></li>
+        	<li><a href="memory2017.html">2017年編</a></li>
+        	<li><a href="nickname.html">あだ名集</a></li>
+        </ul>
+	</div>
+	<div class="mainArea">
+		<h1>ちかのあだ名集</h1>
+		<script type="text/javascript">
+			var nickname = ['おちか','ちーやん','おちち','おちちーやん','おちぃちぃ','ちぃちぃ','ちぃや','おちぃ','谷塚のシャンシャン','どんぐり','ラグビーボール','カピパラ','黒タマゴ','ちか',]
+
+			for(var i=0 ; i<nickname.length ; i++){
+				document.write(nickname[i]+"<br>");
+			}
+
+			var random = Math.floor(Math.random() * nickname.length);
+			document.write(nickname[random]);
+		</script>
+	</div>
+</div>
+<footer>
+	<p>copyright2019 yuuki&chika</p>
+</footer>
+</body>
+</html>
