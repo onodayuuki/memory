@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -117,8 +117,8 @@
 .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
-    width: 600px;
-    padding-left: 20px;
+    width: 280px;
+    height:225px;
 }
 
 .slick-dots
@@ -144,7 +144,7 @@
 
     width: 20px;
     height: 20px;
-    margin: 0 5px;
+    margin: 0 1px;
     padding: 0;
 
     cursor: pointer;
