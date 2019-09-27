@@ -338,43 +338,17 @@ video {
 body{
 	background: rgba(225,230,232,1);
 }
-
-
 .contentsArea{
-	padding: 50px 30px;
+	padding: 50px 20px;
 	display: flex;
+}
+.menuArea{
+	margin: 0px 30px 0px 0px;
 }
 .mainArea{
 	background-color: white;
-	width: 1000px;
-	padding:50px 35px;
-}
-.ul {
-	width: 200px;
-	margin: 40px 0px 0px 0px;
-	padding: 0;
-	list-style-type: none;
-	background-color: #eeeeee;
-}
-.li a {
-	display: block;
-	padding: 8px 16px;
-	text-decoration: none;
-	color: #000000;
-}
-.li {
-	text-align: center;
-}
-.li:last-child {
-	border-bottom: none;
-}
-.li a.active {
-	color: #ffffff;
-	background-color: #da3c41;
-}
-.li a:hover:not(.active) {
-	color: #ffffff;
-	background-color: #1b2538;
+	width: 335px;
+	padding:30px 27px;
 }
 h1{
 	padding:0px 0px 0px 25px;
@@ -385,8 +359,8 @@ h1{
     width:80%;
 }
 .slider li img{
-    height: 440px;
-    width: 600px;
+    height: 220px;
+    width: 282px;
 }
 /*slick setting*/
 .slick-prev:before,
@@ -409,13 +383,13 @@ h1{
 	height:150px;
 }
 footer{
-	height: 100px;
+	height: 50px;
 	background-color: #66ccff;
 }
 
 footer p{
-	font-size: 25px;
+	font-size: 15px;
 	text-align: center;
 	color: #ffffff;
-	padding: 32px 30px 28px 30px;
-}@charset "UTF-8";
+	padding: 15px 30px 28px 30px;
+}
