@@ -338,19 +338,8 @@ video {
 body{
 	background: rgba(225,230,232,1);
 }
-
-header{
-	height: 150px;
-	background-color: #ffffff;
-	border-top: 16px solid #66ccff;
-	padding: 0px 100px;
-}
-header a img{
-	height: 134px;
-	width: 180px;
-}
 .contentsArea{
-	padding: 50px 30px;
+	padding: 50px 20px;
 	display: flex;
 }
 .menuArea{
@@ -358,38 +347,11 @@ header a img{
 }
 .mainArea{
 	background-color: white;
-	width: 1000px;
-	padding:50px 35px;
-}
-ul {
-	width: 200px;
-	margin: 40px 0px 0px 0px;
-	padding: 0;
-	list-style-type: none;
-	background-color: #eeeeee;
-}
-li a {
-	display: block;
-	padding: 8px 16px;
-	text-decoration: none;
-	color: #000000;
-}
-li {
-	text-align: center;
-}
-li:last-child {
-	border-bottom: none;
-}
-li a.active {
-	color: #ffffff;
-	background-color: #da3c41;
-}
-li a:hover:not(.active) {
-	color: #ffffff;
-	background-color: #1b2538;
+	width: 335px;
+	padding:30px 27px;
 }
 h1{
-	padding:0px 0px 0px 25px;
+	padding:0px 0px 0px 15px;
 	border-bottom: double 5px #FFC778;
 }
 .slider{
@@ -409,26 +371,34 @@ h1{
 .slideArea{
 	padding:30px 0px 50px 0px;
 }
+.memoriesArea{
+}
 .memoryArea{
 	display:flex;
+	flex-wrap: wrap;
 	border: solid 3px #6091d3;
-	border-radius: 10px
+	border-radius: 10px;
+	border-left-width: 2px;
+    border-right-width: 2px;
 }
 .memory{
 	padding:20px 10px 20px 13px;
 }
 .img{
-	width:130px;
-	height:100px;
+	width:115px;
+	height:90px;
+}
+p{
+	text-align:center;
 }
 footer{
-	height: 100px;
+	height: 50px;
 	background-color: #66ccff;
 }
 
 footer p{
-	font-size: 25px;
+	font-size: 15px;
 	text-align: center;
 	color: #ffffff;
-	padding: 32px 30px 28px 30px;
+	padding: 15px 30px 28px 30px;
 }
