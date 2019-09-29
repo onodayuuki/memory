@@ -1,37 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/common.css">
-<meta http-equiv="content-type" charset="utf-8">
+	<meta http-equiv="content-type" charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/nickname.css">
+	<link rel="stylesheet" type="text/css" href="css/copy.css">
+	<link rel="stylesheet" type="text/css" href="css/copy.css" media="screen and (max-width: 767px)">
+	<link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="slick/slick.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<title>あだ名集</title>
 <title>ニックネーム</title>
 </head>
 <body>
-<header>
-	<a><img src="img/logo.jpg" alt="logo"></a>
-</header>
-<div class="contentsArea">
-    <div class="menuArea">
-        <ul>
-        	<li><a class="active" href="top.html">ホーム</a></li>
-        	<li><a href="memory2020.html">2020年編</a></li>
-        	<li><a href="memory2019.html">2019年編</a></li>
-        	<li><a href="memory2018.html">2018年編</a></li>
-        	<li><a href="memory2017.html">2017年編</a></li>
-        	<li><a href="nickname.html">あだ名集</a></li>
-        </ul>
+<div class="cp_cont">
+	<input type="checkbox" id="cp_toggle03">
+	<div class="cp_mobilebar">
+		<label for="cp_toggle03" class="cp_menuicon">
+			<span></span>
+		</label>
 	</div>
+	<header class="cp_offcm03">
+	<nav>
+		<ul>
+			<li><a href="top.html">ホーム</a></li>
+			<li><a href="memory2020.html">2020年編</a></li>
+			<li><a href="memory2019.html">2019年編</a></li>
+			<li><a href="memory2018.html">2018年編</a></li>
+			<li><a href="memory2017.html">2017年編</a></li>
+			<li><a href="nickname.html">あだ名集</a></li>
+			<li><a href="present.html">プレゼント</a></li>
+		</ul>
+	</nav>
+	</header>
+</div>
+
+<div class="contentsArea">
 	<div class="mainArea">
 		<h1>ちかのあだ名集</h1>
-		<script type="text/javascript">
-			var nickname = ['おちか','ちーやん','おちち','おちちーやん','おちぃちぃ','ちぃちぃ','ちぃや','おちぃ','谷塚のシャンシャン','どんぐり','ラグビーボール','カピパラ','黒タマゴ','ちか',]
+		<div class="nicknameArea">
+			<table>
+				<tr class="font">
+					<td class="center">　1　</td>
+					<td>おちか</td>
+				</tr>
+				<tr class="font">
+					<td class="center">　2　</td>
+					<td>ちぃやん</td>
+				</tr>
+				<tr class="font">
+					<td class="center">3</td>
+					<td>おちち</td>
+				</tr>
+				<tr class="font">
+					<td class="center">4</td>
+					<td>おちちーやん</td>
+				</tr>
+				<tr class="font">
+					<td class="center">5</td>
+					<td>おちぃちぃ</td>
+				</tr>
+				<tr class="font">
+					<td class="center">6</td>
+					<td>ちぃちぃ</td>
+				</tr>
+				<tr class="font">
+					<td class="center">7</td>
+					<td>ちぃや</td>
+				</tr>
+				<tr class="font">
+					<td class="center">8</td>
+					<td>おちぃ</td>
+				</tr>
+				<tr class="font">
+					<td class="center">9</td>
+					<td>谷塚のシャンシャン</td>
+				</tr>
+				<tr class="font">
+					<td class="center">10</td>
+					<td>どんぐり</td>
+				</tr>
+				<tr class="font">
+					<td class="center">11</td>
+					<td>ラグビーボール</td>
+				</tr>
+				<tr class="font">
+					<td class="center">12</td>
+					<td>カピパラ</td>
+				</tr>
+				<tr class="font">
+					<td class="center">13</td>
+					<td>黒タマゴ</td>
+				</tr>
+				<tr class="font">
+					<td class="center">14</td>
+					<td>ちか</td>
+				</tr>
+			</table>
+		</div>
 
-			for(var i=0 ; i<nickname.length ; i++){
-				document.write(nickname[i]+"<br>");
-			}
+		<div class="font2">
+			<script type="text/javascript">
+				var nickname = ['おちか','ちぃやん','おちち','おちちーやん','おちぃちぃ','ちぃちぃ','ちぃや','おちぃ','谷塚のシャンシャン','どんぐり','ラグビーボール','カピパラ','黒タマゴ','ちか',]
 
-			var random = Math.floor(Math.random() * nickname.length);
-			document.write(nickname[random]);
-		</script>
+				var random = Math.floor(Math.random() * nickname.length);
+				document.write("今日のあだ名は、”"+nickname[random]+"”");
+			</script>
+			<br>
+			<div class="botton">
+				<a href="nickname.html" class="btn-square-so-pop" >クリック</a>
+			</div>
+		</div>
 	</div>
 </div>
 <footer>
