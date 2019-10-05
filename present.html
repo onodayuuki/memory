@@ -38,21 +38,65 @@
 <div class="contentsArea">
 	<div class="mainArea">
 		<h1>プレゼント</h1>
+		<section>
+			<h2>ちかの誕生日まで</h2>
+			<p class="timer">あと<span class="time" id="day"></span>日<span class="time" id="hour"></span>時間<span class="time" id="min"></span>分<span class="time" id="sec"></span>秒</p>
+		</section>
+		<input type="submit" value="プレゼント" onclick="present();">
+
+		<script>
+		'use strict'
+
+		function countdown(due){
+			const now = new Date();
+
+			const rest = due.getTime() - now.getTime();
+			const sec = Math.floor(rest / 1000) % 60;
+			const min = Math.floor(rest / 1000 / 60) % 60;
+			const hours = Math.floor(rest / 1000 / 60 / 60) % 24;
+			const days = Math.floor(rest / 1000 / 60 / 60 / 24);
+			const count = [days, hours, min, sec];
+
+			return count;
+		}
+
+		const goal = new Date(2019, 9, 21);
+		/* goal.setHours(23);
+		goal.setMinutes(59);
+		goal.setSeconds(59); */
+		/* console.log(countdown(goal)); */
+
+		function recalc(){
+			const counter = countdown(goal);
+			document.getElementById('day').textContent = counter[0];
+			document.getElementById('hour').textContent = counter[1];
+			document.getElementById('min').textContent = String(counter[2]).padStart(2,'0');
+			document.getElementById('sec').textContent = String(counter[3]).padStart(2,'0');
+			refresh();
+		}
+
+		function refresh(){
+			setTimeout(recalc, 1000);
+		}
+		recalc();
+
+		function present(){
+			let answer = window.prompt('4ケタの数字を入力してね！！');
+
+			if(answer == 4221){
+				alert('大正解ーーーーーーーーーーーーーーーーーーーー！！　　　　　　　　　１つ目のプレゼントだよ( ・∇・)');
+				window.location.href='http://localhost/memory/top.html';
+			}else{
+				alert('残念でしたーーー！！');
+
+			}
+		}
+		</script>
 
 	</div>
 </div>
 <footer>
 	<p>copyright2019 yuuki&chika</p>
 </footer>
-
-<script>
-window.onload = function() {
-	$('.slider').slick({
-		autoplay:true,
-	    autoplaySpeed:4000,
-	    dots:true,
-	});
-}
-</script>
 </body>
 </html>
