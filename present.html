@@ -39,10 +39,14 @@
 	<div class="mainArea">
 		<h1>プレゼント</h1>
 		<section>
-			<h2>ちかの誕生日まで</h2>
+			<h2>ちかの次の誕生日まで</h2>
 			<p class="timer">あと<span class="time" id="day"></span>日<span class="time" id="hour"></span>時間<span class="time" id="min"></span>分<span class="time" id="sec"></span>秒</p>
 		</section>
-		<input type="submit" value="プレゼント" onclick="present();">
+
+		<!-- <input type="submit" value="プレゼント" onclick="present();"> -->
+		<div class="pas">
+			<a href="#" class="btn-gradient-radius" onclick="present();">プレゼント</a>
+		</div>
 
 		<script>
 		'use strict'
@@ -60,7 +64,7 @@
 			return count;
 		}
 
-		const goal = new Date(2019, 9, 21);
+		const goal = new Date(2020, 9, 21);
 		/* goal.setHours(23);
 		goal.setMinutes(59);
 		goal.setSeconds(59); */
@@ -87,7 +91,7 @@
 				alert('大正解ーーーーーーーーーーーーー！！１つ目のプレゼントだよ( ・∇・)');
 				window.location.href='https://yuukichika0410.github.io/memory/disney.html';
 			}else if(answer != 4221 ){
-				alert('残念でしたーーー！！　　　　　　　　ヒントは”ちか”だよ！');
+				alert('残念でしたーーー！！　　　　　　　ヒントは”ちか”だよ！');
 
 			}
 		}
