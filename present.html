@@ -86,15 +86,14 @@
 
 		function present(){
 			let answer = window.prompt('4ケタの数字を入力してね！！');
-			if(answer == 0502){
+			if(answer == '0502'){
 				alert('大正解ーーーー！！\n１つ目のプレゼントだよ( ・∇・)');
 				window.location.href='https://yuukichika0410.github.io/memory/disney.html';
-			}else if(answer == 1021 || answer == 0410){
-				alert('そんな簡単なわけあるかーーー！！');
-			}else{
-				alert('残念でしたーーー！！\nヒントは”初めて〇〇〇した日”だよ！');
+			}else if(answer == '1021' || answer == '0410'){
+				alert('そんな簡単なわけあるかーー！！');
+			}else if(answer != '0502'){
+				alert('残念でしたーーー！！\nヒントは”ちか”だよ！');
 			}
-		}
 		</script>
 
 	</div>
